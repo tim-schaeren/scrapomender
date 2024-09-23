@@ -1,0 +1,96 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15" version="24.7.16">
+  <diagram name="Page-1" id="lzaoyaQEPAbNVH6bzut7">
+    <mxGraphModel dx="1406" dy="2002" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9eo4-0M4flxiD_9VNwLO-4" target="9eo4-0M4flxiD_9VNwLO-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-30" value="scraping" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9eo4-0M4flxiD_9VNwLO-29" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint x="31" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-4" value="&lt;div&gt;famous_quotes.html&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="350" y="-1120" width="126" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="9eo4-0M4flxiD_9VNwLO-5" target="9eo4-0M4flxiD_9VNwLO-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="661" y="-915" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;pre style=&quot;font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; box-sizing: border-box; line-height: 1.4; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 12px; white-space: pre; margin: 0px; padding: 12px; display: block; overflow: auto; caret-color: rgb(64, 64, 64); color: rgb(64, 64, 64);&quot;&gt;&lt;span class=&quot;s2&quot; style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot; style=&quot;box-sizing: border-box;&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot; style=&quot;box-sizing: border-box;&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;o&quot; style=&quot;box-sizing: border-box; color: rgb(102, 102, 102);&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot; style=&quot;box-sizing: border-box;&quot;&gt;xpath&lt;/span&gt;&lt;span class=&quot;p&quot; style=&quot;box-sizing: border-box;&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot; style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot;&gt;&quot;span/small/text()&quot;&lt;/span&gt;&lt;span class=&quot;p&quot; style=&quot;box-sizing: border-box;&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot; style=&quot;box-sizing: border-box; color: rgb(102, 102, 102);&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot; style=&quot;box-sizing: border-box;&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot; style=&quot;box-sizing: border-box;&quot;&gt;(),&lt;/span&gt;&lt;br&gt;&quot;&lt;span class=&quot;s2&quot; style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot;&gt;quote&quot;&lt;/span&gt;&lt;span class=&quot;p&quot; style=&quot;box-sizing: border-box;&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot; style=&quot;box-sizing: border-box;&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;o&quot; style=&quot;box-sizing: border-box; color: rgb(102, 102, 102);&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot; style=&quot;box-sizing: border-box;&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;p&quot; style=&quot;box-sizing: border-box;&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot; style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot;&gt;&quot;span.text::text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot; style=&quot;box-sizing: border-box;&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot; style=&quot;box-sizing: border-box; color: rgb(102, 102, 102);&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot; style=&quot;box-sizing: border-box;&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot; style=&quot;box-sizing: border-box;&quot;&gt;()&lt;/span&gt;&lt;/pre&gt;" link="&lt;pre style=&quot;font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; text-decoration: none; box-sizing: border-box; line-height: 1.4; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 12px; white-space: pre; margin: 0px; padding: 12px; display: block; overflow: auto; caret-color: rgb(64, 64, 64); color: rgb(64, 64, 64); background-color: rgb(238, 255, 204);&quot;&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;n&quot;&gt;quote&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(102, 102, 102);&quot; class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;n&quot;&gt;xpath&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;span/small/text()&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(102, 102, 102);&quot; class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;(),&lt;/span&gt;&#xa;                &lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;n&quot;&gt;quote&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(102, 102, 102);&quot; class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;n&quot;&gt;css&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;span.text::text&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(102, 102, 102);&quot; class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/pre&gt;" id="9eo4-0M4flxiD_9VNwLO-5">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;align=left;labelBackgroundColor=none;" parent="1" vertex="1">
+            <mxGeometry x="225" y="-950" width="376" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-6" value="scrapy.py" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="225" y="-980" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9eo4-0M4flxiD_9VNwLO-9" target="9eo4-0M4flxiD_9VNwLO-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-23" value="post-processing" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9eo4-0M4flxiD_9VNwLO-17" vertex="1" connectable="0">
+          <mxGeometry x="0.1429" y="3" relative="1" as="geometry">
+            <mxPoint x="45" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-9" value="&lt;pre style=&quot;box-sizing: border-box; line-height: 1.4; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;Courier New&amp;quot;, Courier, monospace; margin-top: 0px; margin-bottom: 0px; padding: 12px; overflow: auto; caret-color: rgb(64, 64, 64); color: rgb(64, 64, 64);&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;Jane Austen&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160); font-weight: bold;&quot; class=&quot;se&quot;&gt;\u201c&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;The person, be it gentleman... &lt;/span&gt;&lt;br&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;Steve Martin&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box;&quot; class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160); font-weight: bold;&quot; class=&quot;se&quot;&gt;\u201c&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(64, 112, 160);&quot; class=&quot;s2&quot;&gt;A day without sunshine...&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=25;align=left;" parent="1" vertex="1">
+          <mxGeometry x="143" y="-820" width="540" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-13" value="processing" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="443.0049751823012" y="-850" as="geometry">
+            <mxPoint x="5" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-14" value="result.json" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="143" y="-850" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9eo4-0M4flxiD_9VNwLO-16" target="9eo4-0M4flxiD_9VNwLO-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-16" value="NLP/LLM Magic" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="289" y="-663" width="248" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9eo4-0M4flxiD_9VNwLO-18" target="9eo4-0M4flxiD_9VNwLO-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-28" value="&quot;recommended quotes for you:&quot;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9eo4-0M4flxiD_9VNwLO-27" vertex="1" connectable="0">
+          <mxGeometry x="-0.1826" y="-1" relative="1" as="geometry">
+            <mxPoint x="88" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-18" value="recommender system" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="294" y="-520" width="238" height="102.5" as="geometry" />
+        </mxCell>
+        <mxCell id="9eo4-0M4flxiD_9VNwLO-20" value="user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="398" y="-360" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4CiIi7kN2GHjXUL4175--7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4CiIi7kN2GHjXUL4175--18" target="4CiIi7kN2GHjXUL4175--16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1109" y="-720" as="sourcePoint" />
+            <mxPoint x="1109" y="-663" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4CiIi7kN2GHjXUL4175--14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4CiIi7kN2GHjXUL4175--16" target="4CiIi7kN2GHjXUL4175--17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4CiIi7kN2GHjXUL4175--15" value="&quot;recommended quotes for you:&quot;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4CiIi7kN2GHjXUL4175--14">
+          <mxGeometry x="-0.1826" y="-1" relative="1" as="geometry">
+            <mxPoint x="88" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4CiIi7kN2GHjXUL4175--16" value="recommender system" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="-520" width="238" height="102.5" as="geometry" />
+        </mxCell>
+        <mxCell id="4CiIi7kN2GHjXUL4175--17" value="user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1094" y="-360" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4CiIi7kN2GHjXUL4175--18" value="in-house data" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1037" y="-720" width="144" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
