@@ -1,0 +1,314 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MSc BIS Thesis 
+% LaTeX Template
+% Version 1.0 (29/08/2014)
+%
+% Original authors:
+% Steven Gunn 
+% Sunil Patel
+%
+% Further authors:
+% Michael Stauffer
+% 
+% This template is based on
+% http://www.latextemplates.com/template/masters-doctoral-thesis
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% For digital publication it is recommended to use a one-sided layout
+\documentclass[11pt, oneside]{Thesis}
+
+% For printing it is recommended to use a two-sided layout
+%\documentclass[11pt, twoside]{Thesis}
+
+\makeglossaries
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT VARIABLES
+%	Fill in the lines below to update the thesis template
+%	
+%   If you want to cite each of the variables defined below, look at the
+%	section above for the citation command.
+%----------------------------------------------------------------------------------------
+
+% You thesis title
+% Citation command \thesisTitle
+\thesisTitle{Thesis Title}
+%-------------------------------------------------  
+
+% You supervisor's name 
+% Citation command \supName 
+\supervisor{Dr. James \textsc{Smith}}
+%-------------------------------------------------  
+
+% You supervisor's URL
+% Citation command \supURL
+\supervisorURL{http://www.jamessmith.com}
+%-------------------------------------------------
+
+% If you don't have a co-supervisor, exchange with
+% \cosupervisorfalse
+\cosupervisortrue
+%-------------------------------------------------
+
+% You co-supervisor's name 
+% Citation command \supcoName 
+\cosupervisor{Dr. Frank \textsc{Miller}}
+%-------------------------------------------------  
+
+% You co-supervisor's URL
+% Citation command \supcoURL
+\cosupervisorURL{http://www.frankmiller.com}
+%-------------------------------------------------
+
+% Your degree name
+% Citation command \degreeName 
+\degree{Master of Science in Business Information Systems}
+%-------------------------------------------------   
+
+% Your name
+% Citation command \authorName
+\authors{John \textsc{Smith}}
+%-------------------------------------------------
+
+% Your URL
+% Citation command \authorURL
+\authorsURL{http://www.johnsmith.com}
+%-------------------------------------------------
+
+% Your address (not used)
+% Citation command \addressNames
+\addresses{}
+%-------------------------------------------------
+
+% Your subject area (not used) 
+% Citation command \subjectName
+\subject{}
+%-------------------------------------------------   
+
+% Keywords for your thesis (not used)
+% Citation command \keywordNames 
+\keywords{}
+%-------------------------------------------------
+
+% http://www.fhnw.ch
+% Citation command \fhnwURL 
+%-------------------------------------------------
+
+% University of Applied Sciences and Arts Northwestern Switzerland
+% Citation command \fhnw 
+%-------------------------------------------------
+
+% UNIVERSITY OF APPLIED SCIENCES AND ARTS NORTHWESTERN SWITZERLAND
+% Citation command \FHNW 
+%-------------------------------------------------
+
+% http://www.fhnw.ch/business
+% Citation command \hswURL 
+%-------------------------------------------------
+
+% School of Business
+% Citation command \hsw 
+%-------------------------------------------------
+
+% SCHOOL OF BUSINESS
+% Citation command \HSW 
+%-------------------------------------------------
+
+% http://www.fhnw.ch/business/iwi
+% Citation command \iwiURL 
+%-------------------------------------------------
+
+% Institute for Information Systems
+% Citation command \iwi 
+%-------------------------------------------------
+
+% INSTITUTE FOR INFORMATION SYSTEMS for Information Systems
+% Citation command \IWI
+%-------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	GLOSSARY
+%	Add your glossary terms below
+%	
+%   If you want to cite a glossary term simply use \gls{term) for the singular form 
+%   of the term or \glspl{term} for the plural form of the term.
+%----------------------------------------------------------------------------------------
+
+\newglossaryentry{Java}{
+    name={Java},
+    description={\blindtext}
+}
+
+\newglossaryentry{Oracle}{
+    name={Oracle},
+    description={\blindtext}
+}
+
+\newglossaryentry{Microsoft}{
+    name={Microsoft},
+    description={\blindtext}
+}
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%	Add your glossary terms below
+%	
+%   If you want to cite an abbreviation term simply use \gls{term) for the singular form  
+%   of the term or \glspl{term} for the plural form of the term.
+%----------------------------------------------------------------------------------------
+
+\newacronym{svm}{SVM}{Support Vector Machine}
+
+
+% PDF meta-data
+\hypersetup{pdftitle={\thesisTitle}}
+\hypersetup{pdfsubject=\subjectName}
+\hypersetup{pdfauthor=\authorName}
+\hypersetup{pdfkeywords=\keywordNames}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\titlePage
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\abstractPage{
+    The Thesis Abstract is written here (and usually kept to just this page)\ldots
+}
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	FOREWORD / ACKNOWLEDGEMENTS (optional)
+%----------------------------------------------------------------------------------------
+
+\ackPage{
+    The acknowledgements and the people to thank go here, don't forget to include your project advisor\ldots
+}
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\fillingPage{}
+\input{01_Chapters/00_HowToUseLaTeX} % Delete this line after reading this chapter
+
+\fillingPage{}
+\input{01_Chapters/01_Introduction} 
+
+\fillingPage{}
+\input{01_Chapters/02_LiteratureReview}
+
+\fillingPage{}
+\input{01_Chapters/03_ResearchMethod}
+
+\fillingPage{} 
+\input{01_Chapters/04_1_BodyOfText}
+
+\fillingPage{} 
+\input{01_Chapters/04_2_BodyOfText}
+
+\fillingPage{}
+\input{01_Chapters/04_3_BodyOfText}
+
+%\fillingPage{}                        % Add further chapters here
+%\input{01_Chapters/04_4_BodyOfText}
+
+%\fillingPage{} 
+%\input{01_Chapters/04_5_BodyOfText}
+
+\fillingPage{} 
+\input{01_Chapters/05_Conclusion}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\fillingPage{} 
+\listOfBibliography
+
+%----------------------------------------------------------------------------------------
+%	STATEMENT OF AUTHENTICITY
+%----------------------------------------------------------------------------------------
+
+\fillingPage{} 
+\statementOfAuthenticity
+
+%----------------------------------------------------------------------------------------
+%	GLOSSARY (if appropriate)
+%----------------------------------------------------------------------------------------
+
+\fillingPage{} 
+\listOfGlossary
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS (if appropriate)
+%----------------------------------------------------------------------------------------
+
+\fillingPage{} 
+\listOfAbbreviation
+
+%%----------------------------------------------------------------------------------------
+%%	LIST OF FIGURES (optional)
+%%----------------------------------------------------------------------------------------
+
+\fillingPage{} 
+\listOfFigures
+
+%%----------------------------------------------------------------------------------------
+%%	LIST OF TABLES (optional)
+%%----------------------------------------------------------------------------------------
+
+\fillingPage{} 
+\listOfTables
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES (if appropriate)
+%----------------------------------------------------------------------------------------
+
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\fillingPage{} 
+\input{02_Appendices/AppendixA}
+
+\fillingPage{} 
+\input{02_Appendices/AppendixB}
+
+%\fillingPage{} 
+%\input{02_Appendices/AppendixC}
+
+\backmatter
+
+\end{document}  
