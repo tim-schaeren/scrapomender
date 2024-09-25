@@ -1,5 +1,6 @@
 from transformers import pipeline
 import json
+import os
 import torch
 
 # Check if Metal (MPS) is available and set the device accordingly
@@ -24,8 +25,10 @@ def assign_bert_sentiment_score(review_text):
         return round((1 - confidence) * 10, 1)
 
 # Process reviews from the input file
-input_file_path = '../scraper/output/scraped_reviews.jsonl'
-output_file_path = './output/reviews_with_bert_scores.jsonl'
+# Get the absolute path of the current script
+base_dir = os.path.abspath(os.path.dirname(__file__))
+input_file_path = os.path.join('..', 'scraper', 'output', 'scraped_reviews.jsonl')
+output_file_path = os.path.join(base_dir, 'output', 'reviews_with_bert_scores.jsonl')
 
 output_lines_bert = []
 with open(input_file_path, 'r') as file:
@@ -40,5 +43,5 @@ with open(output_file_path, 'w') as output_file:
     for line in output_lines_bert:
         output_file.write(line + '\n')
 
-print("Processing complete! Check the file:", output_file_path)
+print("Sentiment analysis complete! Check the file:", output_file_path)
 

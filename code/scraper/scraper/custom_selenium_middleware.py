@@ -27,7 +27,7 @@ class CustomSeleniumMiddleware:
         if not request.meta.get('selenium'):
             return None
 
-        logging.warning(f"Now scraping URL with Selenium: {request.url}")
+        logging.info(f"Now scraping URL with Selenium: {request.url}")
         self.driver.get(request.url)
 
         # Click "Load More" button until it's no longer available
@@ -38,11 +38,9 @@ class CustomSeleniumMiddleware:
                     EC.element_to_be_clickable((By.CSS_SELECTOR, 'rt-button[data-qa="load-more-btn"]'))
                 )
                 load_more_button.click()  # Click the button
-                logging.warning(f"Clicked 'Load More' button on {request.url}")
                 time.sleep(2)  # Wait for the content to load
             except Exception as e:
                 # If the "Load More" button is not clickable or not present, break the loop
-                logging.warning(f"No more 'Load More' buttons found on {request.url}")
                 break
 
         # Once all reviews are loaded, return the full page source

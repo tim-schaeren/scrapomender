@@ -1,7 +1,6 @@
 .DS_Store
 code/nlp/output
 code/scraper/output
-code/nlp/*_env
-code/scraper/*_env
 code/scraper/scraper/__pycache__
 code/scraper/scraper/spiders/__pycache__
+*_env
