@@ -1,0 +1,112 @@
+\glsdefs@newdocentry{Recommender}%
+{%
+name={Recommender},%
+sort={Recommender},%
+type={main},%
+first={Recommender},%
+firstplural={Recommenders},%
+text={Recommender},%
+plural={Recommenders},%
+description={\blindtext },%
+descriptionplural={\blindtext },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Webscraping}%
+{%
+name={Webscraping},%
+sort={Webscraping},%
+type={main},%
+first={Webscraping},%
+firstplural={Webscrapings},%
+text={Webscraping},%
+plural={Webscrapings},%
+description={\blindtext },%
+descriptionplural={\blindtext },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{NLP}%
+{%
+name={NLP},%
+sort={NLP},%
+type={main},%
+first={NLP},%
+firstplural={NLPs},%
+text={NLP},%
+plural={NLPs},%
+description={\blindtext },%
+descriptionplural={\blindtext },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{nlp}%
+{%
+name={\acronymfont {\glsentryshort {nlp}}},%
+sort={NLP},%
+type={acronym},%
+first={NLP},%
+firstplural={NLPs},%
+text={NLP},%
+plural={NLPs},%
+description={Natural Language Processing},%
+descriptionplural={Natural Language Processing},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Natural Language Processing},%
+longplural={Natural Language Processings},%
+short={NLP},%
+shortplural={NLPs},%
+counter={page},%
+parent={},%
+%
+}%
+
