@@ -28,9 +28,10 @@ def create_virtualenv(env_path, requirements_file):
 print("Setting up scraper environment...")
 create_virtualenv(scraper_env, os.path.join(scraper_dir, 'requirements.txt'))
 # get rid of stale output
-if os.path.exists(os.path.join(scraper_dir, 'output')):
-        print(f"Removing stale output at {os.path.join(scraper_dir, 'output')}...")
-        shutil.rmtree(os.path.join(scraper_dir, 'output'))
+file_path = os.path.join(scraper_dir, 'output', 'scraped_reviews.jsonl')
+if os.path.exists(file_path):
+    print(f"Removing stale output at {file_path} ...")
+    os.remove(file_path)
 
 # 2. Run the scraper using the Python interpreter from the virtual environment
 print("Starting the scraper...")
@@ -47,10 +48,10 @@ print("Scraping done.")
 print("Setting up sentiment analysis environment...")
 create_virtualenv(sentiment_env, os.path.join(nlp_dir, 'requirements.txt'))
 # get rid of stale output
-if os.path.exists(os.path.join(nlp_dir, 'output')):
-        print(f"Removing stale output at {os.path.join(nlp_dir, 'output', 'reviews_with_bert_scores.jsonl')}...")
-        os.remove(os.path.join(nlp_dir, 'output', 'reviews_with_bert_scores.jsonl'))
-
+file_path = os.path.join(nlp_dir, 'output', 'reviews_with_bert_scores.jsonl')
+if os.path.exists(file_path):
+    print(f"Removing stale output at {file_path} ...")
+    os.remove(file_path)
 
 # 4. Run sentiment analysis using Python from the virtual environment
 print("Starting sentiment analysis...")
