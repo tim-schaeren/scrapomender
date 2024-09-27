@@ -10,25 +10,25 @@ class RTReviewsSpider(Spider):
 
     def start_requests(self):
         url = 'https://www.rottentomatoes.com/browse/movies_in_theaters/sort:top_box_office'
-        logging.info(f"Now scraping website: {url}")
+        logging.warning(f"Now scraping website: {url}")
         yield Request(url=url, callback=self.parse_movies, meta={'selenium': True})
 
     def parse_movies(self, response):
         movie_urls = response.css("a[data-qa='discovery-media-list-item-caption']::attr(href)").getall()
-        logging.info(f"Found {len(movie_urls)} movies.")
+        logging.warning(f"Found {len(movie_urls)} movies.")
 
         limited_movie_urls = movie_urls[:self.max_movies]
         
         for url in limited_movie_urls:
             movie_url = response.urljoin(url + '/reviews')
             movie_title = url.split("/")[-1]  # Extract movie name from URL
-            logging.info(f"Now scraping movie reviews from {movie_url}")
+            logging.warning(f"Now scraping movie reviews from {movie_url}")
             yield Request(url=movie_url, callback=self.parse_reviews, meta={'selenium': True, 'movie_title': movie_title})
 
     def parse_reviews(self, response):
         reviews = response.css("div.review-row")
         movie_title = response.meta['movie_title']
-        logging.info(f"Found {len(reviews)} reviews for movie {movie_title}.")
+        logging.warning(f"Found {len(reviews)} reviews for movie {movie_title}.")
 
         for review in reviews:
             author = review.css("a.display-name::text").get().strip()

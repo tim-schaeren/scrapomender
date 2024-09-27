@@ -31,17 +31,17 @@ input_file_path = os.path.join('..', 'scraper', 'output', 'scraped_reviews.jsonl
 output_file_path = os.path.join(base_dir, 'output', 'reviews_with_bert_scores.jsonl')
 
 output_lines_bert = []
-with open(input_file_path, 'r') as file:
+with open(input_file_path, 'r', encoding='utf-8') as file:
     for line in file:
         review = json.loads(line.strip())
         review_text = review.get('review_text', '')
         review['score'] = str(assign_bert_sentiment_score(review_text))  # Add BERT-based score
-        output_lines_bert.append(json.dumps(review))
+        # Set ensure_ascii=False to preserve non-ASCII characters
+        output_lines_bert.append(json.dumps(review, ensure_ascii=False))
 
 # Save the processed reviews with BERT-based scores
-with open(output_file_path, 'w') as output_file:
+with open(output_file_path, 'w', encoding='utf-8') as output_file:
     for line in output_lines_bert:
         output_file.write(line + '\n')
 
 print("Sentiment analysis complete! Check the file:", output_file_path)
-

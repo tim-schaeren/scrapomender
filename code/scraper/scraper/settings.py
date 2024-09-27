@@ -114,4 +114,4 @@ AUTOTHROTTLE_MAX_DELAY = 5.0    # Maximum delay in case of high load
 AUTOTHROTTLE_TARGET_CONCURRENCY = 10.0  # Target concurrency
 
 # Log Level
-LOG_LEVEL = 'INFO'
+LOG_LEVEL = 'WARNING'

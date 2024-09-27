@@ -47,9 +47,10 @@ print("Scraping done.")
 print("Setting up sentiment analysis environment...")
 create_virtualenv(sentiment_env, os.path.join(nlp_dir, 'requirements.txt'))
 # get rid of stale output
-if os.path.exists(os.path.join(sentiment_env, 'output')):
-        print(f"Removing stale output at {os.path.join(sentiment_env, 'output')}...")
-        shutil.rmtree(os.path.join(sentiment_env, 'output'))
+if os.path.exists(os.path.join(nlp_dir, 'output')):
+        print(f"Removing stale output at {os.path.join(nlp_dir, 'output', 'reviews_with_bert_scores.jsonl')}...")
+        os.remove(os.path.join(nlp_dir, 'output', 'reviews_with_bert_scores.jsonl'))
+
 
 # 4. Run sentiment analysis using Python from the virtual environment
 print("Starting sentiment analysis...")
